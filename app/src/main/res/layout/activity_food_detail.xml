@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp">
+
+    <TextView
+        android:id="@+id/exerciseNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodLabel"
+        android:layout_marginTop="10dp"
+        android:text="Name:"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:id="@+id/exercName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/exerciseNameLabel"
+        android:layout_marginStart="100dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/caloriesBurnLabel"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/exercName"
+        android:layout_marginTop="5dp"
+        android:text="Brand:"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/foodBrandLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/exercName"
+        android:layout_below="@+id/exercName"
+        android:text="TextView"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView30"
+        android:layout_marginTop="10dp"
+        android:text="Calories:"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/foodCaloriesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/exercName"
+        android:layout_alignTop="@+id/textView24"
+        android:text="TextView"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView24"
+        android:text="Carbs:"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/foodCarbsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/exercName"
+        android:layout_below="@+id/textView24"
+        android:text="TextView"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView26"
+        android:text="Proteins:"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/foodProteinsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/exercName"
+        android:layout_below="@+id/textView26"
+        android:text="TextView"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caloriesBurnLabel"
+        android:text="Nutrient"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/foodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="24dp"
+        android:text="Food"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView28"
+        android:layout_marginTop="5dp"
+        android:text="Fats:"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/foodFatsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/exercName"
+        android:layout_below="@+id/textView28"
+        android:text="TextView"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView32"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"
+        android:textColor="@color/colorBlack"
+        android:text="Quantity:" />
+
+    <Spinner
+        android:id="@+id/quantitySpinner"
+        android:layout_width="105dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/quantity"/>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="112dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:text="Add" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/baseline_keyboard_backspace_black_18dp"
+        android:background="@color/colorWhite"/>
+</RelativeLayout>

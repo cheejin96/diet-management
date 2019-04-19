@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cheejin.fyp.RegisterPage"
+    android:background="@color/colorWhite"
+    android:layout_marginLeft="10dp">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/baseline_keyboard_backspace_black_18dp"
+        android:background="@color/colorWhite"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backBtn">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/backBtn"
+                android:textSize="20dp"
+                android:text="Username:" />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/userName"
+                android:text="Password:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/exercName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/exercName"
+                android:text="Gender"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGenderGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_centerHorizontal="true">
+
+                <RadioButton
+                    android:id="@+id/radioMaleBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemaleBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="20dp" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/ageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGenderGroup"
+                android:textSize="20dp"
+                android:text="Age"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/userAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ageLabel"
+                android:layout_toEndOf="@+id/textView"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Age" />
+            <TextView
+                android:id="@+id/textView4"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ageLabel"
+                android:layout_marginTop="20dp"
+                android:text="Height"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/caloriesBurn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_toEndOf="@+id/textView"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="In CM"/>
+
+            <EditText
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/caloriesBurn"
+                android:layout_toEndOf="@+id/textView"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="In Kilogram"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/caloriesBurn"
+                android:text="Weight"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/min"
+                android:text="Goal"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGoalGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6">
+
+                <RadioButton
+                    android:id="@+id/radioLossBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView6"
+                    android:layout_below="@+id/textView6"
+                    android:text="Loss weight"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/radioMaintBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/radioLossBtn"
+                    android:layout_below="@+id/radioLossBtn"
+                    android:text="Maintain weight"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/radioGainBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/radioMaintBtn"
+                    android:layout_below="@+id/radioMaintBtn"
+                    android:text="Gain weight"
+                    android:textSize="20dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGoalGroup"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Register"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

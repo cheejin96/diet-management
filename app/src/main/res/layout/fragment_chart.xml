@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.cheejin.fyp.ChartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Spinner
+            android:id="@+id/dateSpinner"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="436dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/pieChart"
+                android:layout_below="@+id/chartLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--<org.eazegraph.lib.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/chartLabel">
+            </org.eazegraph.lib.charts.PieChart>-->
+
+            <!--<com.intrusoft.scatter.PieChart
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/pieChart"
+                android:layout_below="@+id/chartLabel"/>-->
+
+            <!--<com.anychart.anychart.AnyChartView
+                android:id="@+id/pieChart"
+                android:layout_below="@+id/chartLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.anychart.anychart.AnyChartView>-->
+
+            <!--<com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/chartLabel">
+            </com.github.mikephil.charting.charts.PieChart>-->
+
+            <TextView
+                android:id="@+id/chartLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="13dp"
+                android:text="Chart"
+                android:textSize="24dp"
+                android:textColor="@color/colorBlack"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

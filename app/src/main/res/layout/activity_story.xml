@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@color/colorWhite"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/statusText"
+        android:layout_marginTop="21dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/statusText"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:inputType="textPersonName"
+        android:hint="What on your mind" />
+
+    <Button
+        android:id="@+id/postBtn"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/statusText"
+        android:layout_below="@+id/statusText"
+        android:text="Post" />
+
+    <ImageButton
+        android:id="@+id/imageBtn"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/postBtn"
+        android:layout_alignStart="@+id/userName"
+        app:srcCompat="@drawable/baseline_add_a_photo_black_18dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postBtn"
+        android:layout_centerHorizontal="true" />
+        app:srcCompat="@color/colorAccent" />
+
+</RelativeLayout>

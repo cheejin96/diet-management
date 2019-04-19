@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.cheejin.fyp.TipsForHelp"
+    >
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/baseline_keyboard_backspace_black_18dp"
+        android:background="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/dietBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/meal"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:text="Diet tips" />
+
+    <Button
+        android:id="@+id/gainBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dietBtn"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:text="Gain tips" />
+
+    <Button
+        android:id="@+id/maintainBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gainBtn"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:text="maintain healthy tips" />
+
+    <TextView
+        android:id="@+id/meal"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/backBtn"
+        android:text="Meal Recipes" />
+
+    <TextView
+        android:id="@+id/exerciseTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maintainBtn"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:text="Exercise Tips" />
+
+    <Button
+        android:id="@+id/dietExercBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/exerciseTips"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:text="Diet tips" />
+
+    <Button
+        android:id="@+id/gainExercBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dietExercBtn"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:text="Gain tips" />
+
+    <Button
+        android:id="@+id/maintainExercBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gainExercBtn"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:text="maintain healthy tips" />
+
+</RelativeLayout>

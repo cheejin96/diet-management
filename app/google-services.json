@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "373518789936",
+    "firebase_url": "https://fypdatabase-3834c.firebaseio.com",
+    "project_id": "fypdatabase-3834c",
+    "storage_bucket": "fypdatabase-3834c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373518789936:android:8d4a5fd563d41a00",
+        "android_client_info": {
+          "package_name": "com.example.cheejin.fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373518789936-petkaj3ttlsv2ojdr0idtu34eu8q2ep5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cheejin.fyp",
+            "certificate_hash": "b4b878e4a9e360bf1312e73da640ec73ff502667"
+          }
+        },
+        {
+          "client_id": "373518789936-7i5ltdhuqfo8hsupoa0qs5p3oi3gcgb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKKRv_7DGSfja0tneJjnKCiT5mkty7FW8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373518789936-7i5ltdhuqfo8hsupoa0qs5p3oi3gcgb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.cheejin.fyp.MoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/userName"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/updateKgButton"
+            android:layout_alignParentStart="true"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/editBtn"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/logoutBtn"
+            android:layout_alignParentStart="true"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="logout" />
+
+        <Button
+            android:id="@+id/updateKgButton"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Update Kg" />
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="BMI"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/currentBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="Current BMI" />
+
+        <TextView
+            android:id="@+id/bmiStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/userName"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorBlack"
+            android:text="Underweight: less than 18.5 \n Normal: 18.5 - 24.9 \n Overweight: 25 - 29.9 \n Obese: more than 30"
+            android:textAlignment="textEnd" />
+    </RelativeLayout>
+
+</FrameLayout>

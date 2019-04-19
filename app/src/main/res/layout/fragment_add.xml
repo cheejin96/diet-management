@@ -1,0 +1,286 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.cheejin.fyp.AddFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+
+        <Spinner
+            android:id="@+id/dateSpinner"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorBlack"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/caloriesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateSpinner"
+            android:layout_marginTop="10dp"
+            android:text="CALORIES REMAINING"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/breakfastText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:text="Breakfast" />
+
+            <Button
+                android:id="@+id/breakfastBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/breakfastText"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                android:text="Click to Add Food" />
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/lunchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/breakfastBtn"
+                android:textSize="16dp"
+                android:text="Lunch" />
+
+            <Button
+                android:id="@+id/lunchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/lunchText"
+                android:layout_marginRight="10dp"
+                android:text="Click to Add Food" />
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/dinnerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/lunchBtn"
+                android:textSize="16dp"
+                android:text="Dinner" />
+
+            <Button
+                android:id="@+id/dinnerBtn"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/dinnerText"
+                android:layout_marginRight="10dp"
+                android:text="Click to Add Food" />
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/otherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/dinnerBtn"
+                android:textSize="16dp"
+                android:text="Other" />
+
+            <Button
+                android:id="@+id/otherBtn"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/otherText"
+                android:layout_marginRight="10dp"
+                android:text="Click to Add Food" />
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/exerciseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/otherBtn"
+                android:textSize="16dp"
+                android:text="Exercise" />
+
+            <Button
+                android:id="@+id/exerciseBtn"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/exerciseText"
+                android:layout_marginRight="10dp"
+                android:text="Click to Add Exercise" />
+
+            <Button
+                android:id="@+id/tipsBtn"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/breakfastText"
+                android:layout_below="@+id/exerciseBtn"
+                android:layout_marginRight="10dp"
+                android:text="Tips for help" />
+
+        </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/caloriesGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caloriesLabel"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caloriesGoal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Goal"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/caloriesGoal"
+            android:layout_marginStart="80dp"
+            android:text="-" />
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:id="@+id/caloriesFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textSize="16dp"
+            android:layout_alignTop="@+id/caloriesGoal"
+            android:layout_marginStart="100dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caloriesFood"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_marginStart="100dp"
+            android:text="Food"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/caloriesGoal"
+            android:layout_centerHorizontal="true"
+            android:text="+" />
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:id="@+id/caloriesExerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="16dp"
+            android:layout_alignTop="@+id/caloriesGoal"
+            android:layout_marginEnd="100dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_below="@+id/caloriesExerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_marginEnd="100dp"
+            android:text="Exercise"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/caloriesGoal"
+            android:layout_marginEnd="80dp"
+            android:textColor="@color/colorBlack"
+            android:text="=" />
+
+        <TextView
+            android:id="@+id/caloriesRemain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/caloriesGoal"
+            android:layout_marginEnd="10dp"
+            android:textSize="16dp"
+            android:text="0"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView8"
+            android:text="Remaining" />
+
+    </RelativeLayout>
+
+</FrameLayout>

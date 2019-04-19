@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/baseline_chat_black_18dp"
+        android:title="@string/nav_chat" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/baseline_search_black_18dp"
+        android:title="@string/nav_search" />
+
+    <item
+        android:id="@+id/nav_add"
+        android:icon="@drawable/baseline_add_box_black_18dp"
+        android:title="@string/nav_add" />
+
+    <item
+        android:id="@+id/nav_chart"
+        android:icon="@drawable/baseline_insert_chart_black_18dp"
+        android:title="@string/nav_chart" />
+
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/baseline_more_black_18dp"
+        android:title="@string/nav_more" />
+</menu>

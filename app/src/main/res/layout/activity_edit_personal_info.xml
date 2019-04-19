@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.cheejin.fyp.RegisterPage"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/userName"
+        android:text="Password:"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/exercName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/exercName"
+        android:text="Gender"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGenderGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radioMaleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioFemaleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioGenderGroup"
+        android:text="Height"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/caloriesBurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:hint="In CM"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caloriesBurn"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:hint="In Kilogram"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/caloriesBurn"
+        android:text="Weight"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/min"
+        android:text="Goal"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGoalGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6">
+
+        <RadioButton
+            android:id="@+id/radioLossBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:text="Loss weight"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioMaintBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioLossBtn"
+            android:layout_below="@+id/radioLossBtn"
+            android:text="Maintain weight"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioGainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioMaintBtn"
+            android:layout_below="@+id/radioMaintBtn"
+            android:text="Gain weight"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/caloriesBurn"
+        android:layout_alignTop="@+id/cancelBtn"
+        android:text="Update"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGoalGroup"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:text="Cancel"
+        android:textSize="20dp" />
+
+</RelativeLayout>
